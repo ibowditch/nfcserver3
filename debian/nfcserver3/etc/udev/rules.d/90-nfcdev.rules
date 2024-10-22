@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTRS{product}=="RC-S380/S", ATTRS{manufacturer}=="SONY", GROUP="plugdev", TAG+="systemd", ENV{SYSTEMD_WANTS}+="nfcserver3.service"
+SUBSYSTEM=="usb", ACTION=="remove", ATTRS{product}=="RC-S380/S", ATTRS{manufacturer}=="SONY", TAG+="systemd"

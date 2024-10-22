@@ -1,0 +1,39 @@
+#! /bin/bash
+# Launch a browser with the ACTIV dashboard. Assumes necessary environment variables are set beforehand.
+
+set -e
+set -v
+set -x
+
+# May be needed to avoid clash with kiosk service, when launching browser from a service
+sleep 5
+
+# Normally set and remember username and password, so no need to enter each time.
+DASHBOARD_URL="${ACTIV_URL:-https://activ.rfs.nsw.gov.au/webapp/dashboard/}"
+
+# Horizontal offset of second screen, depends on HDMI0 X resolution
+ACTIV_X_OFFSET="${HDMI2_X_OFFSET:-1920}"
+ACT_PROFILE="${ACTIV_CHROME_PROFILE:-/home/pi/Documents/Profiles/1}"
+
+# Need a second profile for this, so create the directory for it if it isn't already there
+mkdir -p $ACT_PROFILE
+
+# Clear cache before starting to force reload - especially after new releases
+# dashboard takes a long time to download, so leave cache there for now. Clear manually if needed
+# [ -d $ACT_PROFILE/Default/Cache ] && rm -rf  $ACT_PROFILE/Default/Cache/*
+
+# To prevent warning about not closing down properly
+# See https://raspberrypi.stackexchange.com/questions/68734/how-do-i-disable-restore-pages-chromium-didnt-shut-down-correctly-prompt
+if [ -w $ACT_PROFILE/Default/Preferences ]; then
+  # Remove traces of improper shutdown
+  sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' $ACT_PROFILE/Default/Preferences
+  sed -i 's/"exit_type":"Crashed"/"exit_type": "Normal"/'  $ACT_PROFILE/Default/Preferences
+  # Lock in place
+  chmod a-w $ACT_PROFILE/Default/Preferences
+fi
+
+# Note windows-position set for second screen, assumes horiz resolution set as env var (normally base.env)
+chromium-browser --user-data-dir=$ACT_PROFILE --window-position=$ACTIV_X_OFFSET,0 --noerrors --noerrordialogs  --disable-infobars --start-fullscreen --new-window --check-for-update-interval=31536000 --app=$DASHBOARD_URL
+
+exit 0
+

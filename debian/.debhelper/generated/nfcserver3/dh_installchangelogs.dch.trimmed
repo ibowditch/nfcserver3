@@ -1,0 +1,9 @@
+nfcserver3 (1.0.1) UNRELEASED; urgency=medium
+  * Release 1
+
+ -- Ian Bowditch <ibowditch@gmail.com>  Tue, 07 Feb 2023 14:08:12 +1100
+
+nfcserver3 (1.0.0) unstable; urgency=medium
+
+    * Initial release:
+ -- John Doe <johndoe@example.com>  Sun, 28 Nov 2021 10:18:51 -0800

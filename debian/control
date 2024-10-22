@@ -1,0 +1,16 @@
+Source: nfcserver3
+Section: python
+Maintainer: John Doe <johndoe@example.com>
+# Author: Ian Bowditch
+Origin: ianbowditch
+Build-Depends: debhelper (>= 7),
+               python3 (>= 3.5)
+Standards-Version: 4.5.1
+Priority: optional
+
+Package: nfcserver3
+Architecture: all
+Section: python
+Depends: python3 (>=3.5), ${misc:Depends}, crudini, pulseaudio, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+

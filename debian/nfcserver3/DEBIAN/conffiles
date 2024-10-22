@@ -1,0 +1,2 @@
+/etc/profile.d/rfstag/base.env
+/etc/udev/rules.d/90-nfcdev.rules

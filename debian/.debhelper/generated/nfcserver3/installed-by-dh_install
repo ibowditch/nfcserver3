@@ -1,0 +1,15 @@
+./conf/90-nfcdev.rules
+./conf/base.env
+./conf/local-example.env
+./conf/nfcreader.ini
+./music/choose.wav
+./music/invalid.wav
+./music/noevent-orig.wav
+./music/noevent.wav
+./music/signin.wav
+./music/signout.wav
+./systemd/launch_kiosk2.service
+./systemd/nfcserver3.service
+./systemd/kiosk_beeper.service
+./utils/addrepo
+./docs/hello-world.1

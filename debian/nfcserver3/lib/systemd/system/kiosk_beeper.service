@@ -1,0 +1,31 @@
+[Unit]
+Description=Tag nfc_kiosk_beeper
+##StopWhenUnneeded=true
+# Only start after network available
+# Wait for sound and network to be available
+Requires=sound.target alsa-restore.service
+After=multi-user.target sound.target alsa-restore.service network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/pi
+User=pi
+# Very important: XDG_RUNTIME_DIR required when generating sound from a systemd/crontab/rc.local background service
+# Other values are defaults for nfc reader, with KIOSK_BRIGADE defaulting to the host name.
+#     See https://www.freedesktop.org/software/systemd/man/systemd.unit.html
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+
+# Set required env variables.
+EnvironmentFile=/etc/profile.d/rfstag/base.env
+# Allow local override of these env vars - Optional
+EnvironmentFile=-/home/pi/.config/rfstag/local.env
+
+ExecStart=/usr/bin/python3 /usr/bin/kiosk_beeper.py
+# Restart if failure. Can be caused by network or reader failing.
+RestartSec=30
+Restart=always
+
+##TODO limit retries to about 20
+
+[Install]
+WantedBy=graphical.target

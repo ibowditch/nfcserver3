@@ -1,0 +1,15 @@
+00f150d6124ad2786170ebceaf74d4ed  home/pi/.config/rfstag/local-example.env
+9dfacc2cfd895ed1fed5cd8c81aba96f  home/pi/.config/rfstag/nfcreader.ini
+417f07dc7e19c1189ef50c917895c371  home/pi/Music/choose.wav
+27f0e32d5ea903b1ae998ef986bb23a3  home/pi/Music/invalid.wav
+6053d9a86d297fa572e4b1fe58da290f  home/pi/Music/noevent-orig.wav
+3c9e89e4f460681a221fd039f28c3a35  home/pi/Music/noevent.wav
+762d12eab9be84f5cce760fc69a676ad  home/pi/Music/signin.wav
+74922c8292afc920a30e238b3a109550  home/pi/Music/signout.wav
+d4ec34de7e225e06ef816a88488ccc85  lib/systemd/system/kiosk_beeper.service
+dec8568a93ee1c302d5553580cc0bfac  lib/systemd/system/launch_kiosk2.service
+569579042b9b166f6783e47b487ba41f  lib/systemd/system/nfcserver3.service
+4450d8b1f6cc0f724be3b6dbc2f4bade  usr/bin/addrepo
+17770795c47d997751f876c189593b8c  usr/share/doc/nfcserver3/changelog.gz
+c3333f503e17af49aaeec614336923e9  usr/share/doc/nfcserver3/copyright
+a560af5c394001ebc134a7d538175f63  usr/share/man/man1/hello-world.1.gz

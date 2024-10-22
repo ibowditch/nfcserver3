@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+pandoc docs/hello-world.1.md -s -t man > docs/hello-world.1
+debuild --no-tgz-check -uc -us
+# -post-dpkg-buildpackage-hook="echo %p"

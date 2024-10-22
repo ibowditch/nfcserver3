@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Add rfstag APT repository to sources
+
+curl -s --compressed "https://ibowditch.github.io/rfstag-kiosk/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/rfstag.gpg >/dev/null
+sudo curl -s --compressed -o /etc/apt/sources.list.d/rfstag.list "https://ibowditch.github.io/rfstag-kiosk/rfstag.list"
+sudo apt update
+

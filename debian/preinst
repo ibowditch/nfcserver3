@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+set -x
+set -v
+
+# This `DEBIAN/preinst` script is run pre-installation
+
+# If any old files left in /usr/local/bin, remove them
+rm -f /usr/local/bin/writetags
+
+# Not working?
+echo "preinst" | systemd-cat -t rfstag -p info
+
+exit 0
