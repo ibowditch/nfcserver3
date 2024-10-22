@@ -20,7 +20,8 @@ EnvironmentFile=/etc/profile.d/rfstag/base.env
 # Allow local override of these env vars - Optional
 EnvironmentFile=-/home/pi/.config/rfstag/local.env
 
-ExecStart=/usr/bin/python3 /usr/bin/kiosk_beeper.py
+# ExecStart=/usr/bin/python3 /usr/bin/kiosk_beeper.py
+ExecStart=/home/pi/.local/bin/kiosk_beeper
 # Restart if failure. Can be caused by network or reader failing.
 RestartSec=30
 Restart=always
