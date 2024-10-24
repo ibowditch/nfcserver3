@@ -8,9 +8,12 @@ Build-Depends: debhelper (>= 7),
 Standards-Version: 4.5.1
 Priority: optional
 
+# not included (breaks) build-dep, python-pygame,
+# from nfcserver2: libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libportmidi-dev, msmtp, msmtp-mta, unattended-upgrades,
+
 Package: nfcserver3
 Architecture: all
 Section: python
-Depends: python3 (>=3.5), ${misc:Depends}, crudini, pulseaudio, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Depends: python3 (>=3.5), ${misc:Depends}, crudini, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
 Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
 

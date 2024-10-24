@@ -51,6 +51,11 @@ systemctl stop   kiosk_beeper
 systemctl enable kiosk_beeper
 systemctl start  kiosk_beeper
 
+systemctl unmask sshtunnel
+systemctl stop   sshtunnel
+systemctl enable sshtunnel
+systemctl start  sshtunnel
+
 # Make the system journal persistent if not already done.
 #  see https://raspberrypi.stackexchange.com/questions/108411/raspbian-journalctl-only-lists-current-boot-although-syslogs-exist
 JDIR=/var/log/journal

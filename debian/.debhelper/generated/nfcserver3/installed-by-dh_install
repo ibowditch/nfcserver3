@@ -11,5 +11,9 @@
 ./systemd/launch_kiosk2.service
 ./systemd/nfcserver3.service
 ./systemd/kiosk_beeper.service
+./systemd/sshtunnel.service
 ./utils/addrepo
 ./docs/hello-world.1
+./src/launch_kiosk2
+./conf/pagebase.env
+./conf/pagelocal.env-orig

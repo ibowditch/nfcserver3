@@ -1,0 +1,53 @@
+#! /bin/bash
+# Launch a browser with the bushfire app. Assumes necessary environment variables are set beforehand.
+
+set -e
+set -v
+set -x
+
+# Turn off screen blanking: see https://pimylifeup.com/raspberry-pi-kiosk/
+xset s noblank
+xset s off
+xset -dpms
+
+INIFILE=${NFC_INI_FILE}
+
+# Always use the DEFAULT section in the INI file to obtain necessary details
+INISECTION='DEFAULT'
+CRUDINI=/usr/bin/crudini
+
+# Other env vars mut be set, normally in base.env, but can be overriden in local.env
+BRIG=${KIOSK_BRIGADE:-$(hostname)}
+SERV=${BUSHFIRE_SERVER}
+KLOC=${KIOSK_LOCATION}
+
+KPROFILE=${KIOSK_CHROME_PROFILE:-/home/pi/.config/chromium}
+
+KURI=$($CRUDINI --get $INIFILE $INISECTION KIOSK_URI)
+
+KIOSK_URL='https://'$BRIG'.'$SERV'/'$KURI'/'$KLOC
+
+# echo "KIOSK_URL" $KIOSK_URL > ~/klurl
+
+# Clear cache before starting to force reload - especially after new releases
+[ -d $KPROFILE/Default/Cache ] && rm -rf $KPROFILE/Default/Cache/*
+
+# To prevent warning about not closing down properly
+# See https://raspberrypi.stackexchange.com/questions/68734/how-do-i-disable-restore-pages-chromium-didnt-shut-down-correctly-prompt
+if [ -w $KPROFILE/Default/Preferences ]; then
+  # Remove traces of improper shutdown
+  sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' $KPROFILE/Default/Preferences
+  sed -i 's/"exit_type":"Crashed"/"exit_type": "Normal"/'  $KPROFILE/Default/Preferences
+  # Lock in place
+  chmod a-w $KPROFILE/Default/Preferences
+fi
+
+# This must have settings set prior to force keyboard to front or it will be obscured by chromium.
+# -v flag described https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
+[[ -v SCREEN_KEYBOARD ]] && nohup $SCREEN_KEYBOARD  &> /dev/null &
+
+# New flags cause vsync errors to be logged to journal. Remove until 2nd ACTIV screen needed, and further investigation.
+# chromium-browser --user-data-dir=$KIOSK_CHROME_PROFILE --window-position=0,0 --noerrors --noerrordialogs  --disable-infobars --start-fullscreen --new-window --check-for-update-interval=31536000 --app=$KIOSK_URL
+chromium-browser --noerrors --noerrordialogs  --disable-infobars --start-fullscreen --new-window --check-for-update-interval=31536000 --app=$KIOSK_URL
+
+exit 0

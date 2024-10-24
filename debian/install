@@ -5,7 +5,11 @@ conf/nfcreader.ini     home/pi/.config/rfstag
 # Only include if reboot needed ###
 music/*.wav home/pi/Music
 systemd/launch_kiosk2.service lib/systemd/system
-systemd/nfcserver3.service  lib/systemd/system
+systemd/nfcserver3.service    lib/systemd/system
 systemd/kiosk_beeper.service  lib/systemd/system
+systemd/sshtunnel.service  lib/systemd/system
 utils/addrepo usr/bin
 docs/hello-world.1 usr/share/man/man1
+src/launch_kiosk2 usr/bin
+conf/pagebase.env etc/profile.d/rfstag/pagebase.env
+conf/pagelocal.env-orig home/pi/.config/rfstag/pagelocal.env-orig
