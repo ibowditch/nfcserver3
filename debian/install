@@ -11,5 +11,5 @@ systemd/sshtunnel.service  lib/systemd/system
 utils/addrepo usr/bin
 docs/hello-world.1 usr/share/man/man1
 src/launch_kiosk2 usr/bin
-conf/pagebase.env etc/profile.d/rfstag/pagebase.env
-conf/pagelocal.env-orig home/pi/.config/rfstag/pagelocal.env-orig
+conf/pagebase.env etc/profile.d/rfstag
+conf/pagelocal.env-orig home/pi/.config/rfstag

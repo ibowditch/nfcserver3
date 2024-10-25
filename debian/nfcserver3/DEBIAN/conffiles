@@ -1,3 +1,3 @@
 /etc/profile.d/rfstag/base.env
-/etc/profile.d/rfstag/pagebase.env/pagebase.env
+/etc/profile.d/rfstag/pagebase.env
 /etc/udev/rules.d/90-nfcdev.rules
