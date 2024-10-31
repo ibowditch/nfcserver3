@@ -14,6 +14,6 @@ Priority: optional
 Package: nfcserver3
 Architecture: all
 Section: python
-Depends: python3 (>=3.5), ${misc:Depends}, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Depends: python3 (>=3.10), ${misc:Depends}, pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
 Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
 

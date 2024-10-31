@@ -56,6 +56,13 @@ systemctl stop   sshtunnel
 systemctl enable sshtunnel
 systemctl start  sshtunnel
 
+
+# pipx ensurepath
+
+# Force weekly reboot at 2am every Tuesday
+# see https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor
+{ crontab -l; echo "0 2 * * 2 sudo shutdown -r"; } |  sort | uniq | crontab -
+
 # Make the system journal persistent if not already done.
 #  see https://raspberrypi.stackexchange.com/questions/108411/raspbian-journalctl-only-lists-current-boot-although-syslogs-exist
 JDIR=/var/log/journal
