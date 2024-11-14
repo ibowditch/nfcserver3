@@ -51,12 +51,6 @@ systemctl stop   kiosk_beeper
 systemctl enable kiosk_beeper
 systemctl start  kiosk_beeper
 
-systemctl unmask sshtunnel
-systemctl stop   sshtunnel
-systemctl enable sshtunnel
-systemctl start  sshtunnel
-
-
 # pipx ensurepath
 
 # Force weekly reboot at 2am every Tuesday

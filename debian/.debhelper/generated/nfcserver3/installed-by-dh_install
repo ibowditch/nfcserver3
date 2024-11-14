@@ -1,4 +1,5 @@
 ./conf/90-nfcdev.rules
+./conf/95-oldsonynfc.rules
 ./conf/base.env
 ./conf/local-example.env
 ./conf/nfcreader.ini
@@ -11,10 +12,7 @@
 ./systemd/launch_kiosk2.service
 ./systemd/nfcserver3.service
 ./systemd/kiosk_beeper.service
-./systemd/sshtunnel.service
 ./utils/addrepo
 ./utils/dwagent.sh
 ./docs/hello-world.1
 ./src/launch_kiosk2
-./conf/pagebase.env
-./conf/pagelocal.env-orig

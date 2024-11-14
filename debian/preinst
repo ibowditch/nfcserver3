@@ -9,6 +9,10 @@ set -v
 # If any old files left in /usr/local/bin, remove them
 rm -f /usr/local/bin/writetags
 
+chmod 755 /home/pi/.config/rfstag
+chown pi /home/pi/.config/rfstag
+chgrp pi /home/pi/.config/rfstag
+
 # Not working?
 echo "preinst" | systemd-cat -t rfstag -p info
 

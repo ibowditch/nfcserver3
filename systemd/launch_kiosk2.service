@@ -15,8 +15,8 @@ User=pi
 Environment="XDG_RUNTIME_DIR=/run/user/1000"
 # Following is used with multiple screens (no-one using at present)
 # Need to be in place or launch_kiosk2 will fail
-Environment=DISPLAY=:0.0
-Environment=XAUTHORITY=/home/pi/.Xauthority
+#Environment=DISPLAY=:0.0
+#Environment=XAUTHORITY=/home/pi/.Xauthority
 
 # Version: x.p
 
@@ -26,6 +26,8 @@ EnvironmentFile=/etc/profile.d/rfstag/base.env
 EnvironmentFile=-/home/pi/.config/rfstag/local.env
 
 # Use #! /bin/bash at start of script rather than explicitly start bash with /usr/bin/bash
+# If profile locked, use rm -rf ~/.config/chromium/Singleton*
+# See https://github.com/puppeteer/puppeteer/issues/4860
 ExecStart=/usr/bin/launch_kiosk2
 
 # Restart if failure. Can be caused by network or reader failing.

@@ -6,11 +6,12 @@ set -v
 set -x
 
 # Turn off screen blanking: see https://pimylifeup.com/raspberry-pi-kiosk/
-xset s noblank
-xset s off
-xset -dpms
+#xset s noblank
+#xset s off
+#xset -dpms
 
-INIFILE=${NFC_INI_FILE}
+#INIFILE=${NFC_INI_FILE}
+INIFILE=${NFC_INI_FILE:-/home/pi/.config/rfstag/nfcreader.ini}
 
 # Always use the DEFAULT section in the INI file to obtain necessary details
 INISECTION='DEFAULT'
