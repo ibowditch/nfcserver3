@@ -15,8 +15,8 @@ User=pi
 Environment="XDG_RUNTIME_DIR=/run/user/1000"
 # Following is used with multiple screens (no-one using at present)
 # Need to be in place or launch_kiosk2 will fail
-#Environment=DISPLAY=:0.0
-#Environment=XAUTHORITY=/home/pi/.Xauthority
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/pi/.Xauthority
 
 # Version: x.p
 

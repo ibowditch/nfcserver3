@@ -15,6 +15,10 @@ User=pi
 #     See https://www.freedesktop.org/software/systemd/man/systemd.unit.html
 #Environment="XDG_RUNTIME_DIR=/run/user/1000"
 
+# Need to be in place or launch_kiosk2 will fail
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+
 # Set required env variables.
 EnvironmentFile=/etc/profile.d/rfstag/base.env
 # Allow local override of these env vars - Optional

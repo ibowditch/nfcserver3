@@ -26,6 +26,8 @@ EnvironmentFile=/etc/profile.d/rfstag/base.env
 EnvironmentFile=-/home/pi/.config/rfstag/local.env
 
 # Use #! /bin/bash at start of script rather than explicitly start bash with /usr/bin/bash
+# If profile locked, use rm -rf ~/.config/chromium/Singleton*
+# See https://github.com/puppeteer/puppeteer/issues/4860
 ExecStart=/usr/bin/launch_kiosk2
 
 # Restart if failure. Can be caused by network or reader failing.
