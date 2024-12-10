@@ -11,9 +11,11 @@ Priority: optional
 # not included (breaks) build-dep, python-pygame,
 # from nfcserver2: libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libportmidi-dev, msmtp, msmtp-mta, unattended-upgrades,
 
+# chromium-l10n works for bookworm, not bullseye
+
 Package: nfcserver3
 Architecture: all
 Section: python
-Depends: python3 (>=3.9), ${misc:Depends}, pipx, chromium-l10n, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Depends: python3 (>=3.9), ${misc:Depends}, pipx,  crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
 Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
 
