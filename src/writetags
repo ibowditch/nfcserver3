@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Allow user to write new tags. Stop existing service, then restart when done so tagging can continue
+echo "Taking over NFC reader..."
+
+NFC_SERVER=nfcserver3
+NFC_READER=nfcreader
+sudo systemctl stop $NFC_SERVER.service
+sleep 5
+
+# Check if process is still running, and if so need to seek and destroy as well
+NFCPS=$(lsof | grep usb |  awk '/nfcserver/   { print $2; exit; }')
+# NFCPS=$(ps -alx |  awk '/nfcreader/   { print $3; exit; }')
+[ "$NFCPS" ] &&  kill $NFCPS
+
+# Need to set env vars same way as nfcserver2 service.
+export KIOSK_BRIGADE $(hostname)
+set -o allexport
+source /etc/profile.d/rfstag/base.env
+[ -f $HOME/.config/rfstag/local.env ] && source $HOME/.config/rfstag/local.env
+set +o allexport
+
+# Allow -b <brigade name> to change name written to tags from default which is $HOSTNAME
+if [ $# -eq 0 ]
+  then
+      $NFC_READER -w
+  else
+      $NFC_READER -w -b $2
+  fi
+
+# In theory, kiosk in browser should now be able to resume tagging, but best to reboot.
+sudo systemctl start $NFC_SERVER.service

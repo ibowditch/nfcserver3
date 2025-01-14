@@ -12,5 +12,6 @@ utils/addrepo usr/bin
 utils/dwagent.sh usr/bin
 docs/hello-world.1 usr/share/man/man1
 src/launch_kiosk2 usr/bin
+src/writetags usr/bin
 
 
