@@ -12,6 +12,7 @@
 4450d8b1f6cc0f724be3b6dbc2f4bade  usr/bin/addrepo
 3e290a6dbe4ab966f5d15f868c49b210  usr/bin/dwagent.sh
 55a4537b974272dde06c37785a84020d  usr/bin/launch_kiosk2
-6649221af5a42766d55f432398e47441  usr/share/doc/nfcserver3/changelog.gz
+2b8836dea33f7a591478cb12c373deb7  usr/bin/writetags
+10f9083da8e1c6b47fd046284d318e0f  usr/share/doc/nfcserver3/changelog.gz
 c3333f503e17af49aaeec614336923e9  usr/share/doc/nfcserver3/copyright
 a560af5c394001ebc134a7d538175f63  usr/share/man/man1/hello-world.1.gz

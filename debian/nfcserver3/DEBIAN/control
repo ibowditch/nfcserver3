@@ -1,9 +1,9 @@
 Package: nfcserver3
-Version: 1.0.16
+Version: 1.0.17
 Architecture: all
 Origin: ianbowditch
 Maintainer: John Doe <johndoe@example.com>
-Installed-Size: 2129
+Installed-Size: 2130
 Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
 Section: python
 Priority: optional

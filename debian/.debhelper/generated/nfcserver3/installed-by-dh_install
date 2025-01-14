@@ -16,3 +16,4 @@
 ./utils/dwagent.sh
 ./docs/hello-world.1
 ./src/launch_kiosk2
+./src/writetags
