@@ -5,7 +5,7 @@ echo "Taking over NFC reader..."
 
 NFC_SERVER=nfcserver3
 NFC_READER=nfcreader
-sudo systemctl stop $NFC_SERVER.service
+sudo systemctl stop $NFC_SERVER
 sleep 5
 
 # Check if process is still running, and if so need to seek and destroy as well
@@ -29,4 +29,4 @@ if [ $# -eq 0 ]
   fi
 
 # In theory, kiosk in browser should now be able to resume tagging, but best to reboot.
-sudo systemctl start $NFC_SERVER.service
+sudo systemctl start $NFC_SERVER
