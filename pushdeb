@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+pandoc docs/hello-world.1.md -s -t man > docs/hello-world.1
+
+PACKAGE_NAME=$(dpkg-parsechangelog -S Source)
+PACKAGE_VERSION=$(dpkg-parsechangelog -S Version | sed 's/-.*//')
+PACKAGE_ARCH="all"
+#$(dpkg-parsechangelog -S Architecture)
+TARGET_FILE_NAME="${PACKAGE_NAME}_${PACKAGE_VERSION}_${PACKAGE_ARCH}.deb"
+
+export PACKAGE_NAME
+export PACKAGE_VERSION
+export PACKAGE_ARCH
+export TARGET_FILE_NAME
+
+debuild --no-tgz-check -uc -us
+# -post-dpkg-buildpackage-hook="echo %p"
+
+echo ${PACKAGE_NAME}
+echo ${PACKAGE_VERSION}
+echo ${PACKAGE_ARCH}
+echo ${TARGET_FILE_NAME}
+ls -l "../${TARGET_FILE_NAME}"
+mv "../${TARGET_FILE_NAME}" .
