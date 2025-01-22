@@ -8,6 +8,8 @@ NFC_READER=nfcreader
 sudo systemctl stop $NFC_SERVER
 sleep 5
 
+TST=123
+
 # Check if process is still running, and if so need to seek and destroy as well
 NFCPS=$(lsof | grep usb |  awk '/nfcserver/   { print $2; exit; }')
 # NFCPS=$(ps -alx |  awk '/nfcreader/   { print $3; exit; }')

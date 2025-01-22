@@ -12,7 +12,7 @@
 4450d8b1f6cc0f724be3b6dbc2f4bade  usr/bin/addrepo
 3e290a6dbe4ab966f5d15f868c49b210  usr/bin/dwagent.sh
 55a4537b974272dde06c37785a84020d  usr/bin/launch_kiosk2
-25375dd3b07c8f6f0b84dc81158742bf  usr/bin/writetags
-14ebac90dd42317e9a6f407654996cda  usr/share/doc/nfcserver3/changelog.gz
+81ae70eefca8eb149a50dc0cbc547e81  usr/bin/writetags
+2e6c1cce1a77caeb5a586cda18f4ca98  usr/share/doc/nfcserver3/changelog.gz
 c3333f503e17af49aaeec614336923e9  usr/share/doc/nfcserver3/copyright
 a560af5c394001ebc134a7d538175f63  usr/share/man/man1/hello-world.1.gz

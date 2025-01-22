@@ -1,23 +1,14 @@
 #!/usr/bin/env bash
-pandoc docs/hello-world.1.md -s -t man > docs/hello-world.1
+# Packages & Packages.gz
+dpkg-scanpackages --multiversion . > Packages
+gzip -k -f Packages
 
-PACKAGE_NAME=$(dpkg-parsechangelog -S Source)
-PACKAGE_VERSION=$(dpkg-parsechangelog -S Version | sed 's/-.*//')
-PACKAGE_ARCH="all"
-#$(dpkg-parsechangelog -S Architecture)
-TARGET_FILE_NAME="${PACKAGE_NAME}_${PACKAGE_VERSION}_${PACKAGE_ARCH}.deb"
+# Release, Release.gpg & InRelease
+apt-ftparchive release . > Release
+gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" -abs -o - Release > Release.gpg
+gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" --clearsign -o - Release > InRelease
 
-export PACKAGE_NAME
-export PACKAGE_VERSION
-export PACKAGE_ARCH
-export TARGET_FILE_NAME
-
-debuild --no-tgz-check -uc -us
-# -post-dpkg-buildpackage-hook="echo %p"
-
-echo ${PACKAGE_NAME}
-echo ${PACKAGE_VERSION}
-echo ${PACKAGE_ARCH}
-echo ${TARGET_FILE_NAME}
-ls -l "../${TARGET_FILE_NAME}"
-mv "../${TARGET_FILE_NAME}" .
+# Commit & push
+#git add -A
+#git commit -m update
+#git push

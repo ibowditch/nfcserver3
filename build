@@ -21,3 +21,5 @@ echo ${PACKAGE_ARCH}
 echo ${TARGET_FILE_NAME}
 ls -l "../${TARGET_FILE_NAME}"
 mv "../${TARGET_FILE_NAME}" .
+
+git add ${TARGET_FILE_NAME}
