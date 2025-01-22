@@ -1,0 +1,288 @@
+Package: nfcserver3
+Version: 1.0.1
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 723
+Depends: python3 (>= 3.5), crudini, pulseaudio, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.1_all.deb
+Size: 314146
+MD5sum: 081b82dcb1c1fecfd6c19d274baf802f
+SHA1: 779516280cb54c6b69c0d71aa60509118f610213
+SHA256: 8448398051754fedf3118fd2b25a727ef83d8c8bb67a35552c1d13d1ca262e18
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.10
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 731
+Depends: python3 (>= 3.5), crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.10_all.deb
+Size: 317090
+MD5sum: 03631a340359210bc1b5a8028c8501a3
+SHA1: 44515fc7574a8264671bda7d969a6b61cf951df8
+SHA256: c0c32717341565e894e03c48a376a0e8c5db29755fef0e415456d409fad18381
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.11
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 34
+Depends: python3 (>= 3.10), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.11_all.deb
+Size: 5686
+MD5sum: 25c6ec8bbdd31bdb1ec19ce72b670d4e
+SHA1: 167baff78bc05ce7a333a6b68fe8b590aad8d086
+SHA256: 2fda78efa3b24bdbe9d89849c1033ead130ca784a07d442f676db2f3cb8d3e0b
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.12
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2128
+Depends: python3 (>= 3.10), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.12_all.deb
+Size: 673770
+MD5sum: b048948e41726277399676e08efc4ebb
+SHA1: a019fd43a9ba91379791f28139eccb1c8a9b2dae
+SHA256: 4b44d051261c5dae19f90a049502d2e01723b8ba5d6951163631d4637b64548e
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.13
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2129
+Depends: python3 (>= 3.10), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.13_all.deb
+Size: 673868
+MD5sum: d0f9182a0de4aea27542b6cef18aeb06
+SHA1: 9d8077fd8d2bea06fd6bbaefb03913931bdb00af
+SHA256: 3bb2ca5f4dd5b349b6f9f8874e6de55ec457ae639271673023f7673896682bd4
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.14
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2129
+Depends: python3 (>= 3.10), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.14_all.deb
+Size: 673990
+MD5sum: a01b2f0791fb8861a43e209fd38688de
+SHA1: 52b11f2964f1d1582dd14892cb23243785d75fc5
+SHA256: 46d188b94d50134dd84abdcdf80bae7fa0badd0ed944c2611bc7d5c4586afbb4
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.15
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2129
+Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.15_all.deb
+Size: 673990
+MD5sum: be4bdb42d6755c3766053c811c70eb66
+SHA1: e23a797285de9ac9ad92feb76a4182d30fecdeba
+SHA256: 205d29fe8f17865e43704f211c4ad0ddb80982546720f7d7b177dc02c8b57ce4
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.16
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2130
+Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.16_all.deb
+Size: 674524
+MD5sum: 58f5dc917e59e802a3976396e9a916d9
+SHA1: bfd94299ea1e5e65152a91688b53aec722b337ac
+SHA256: ccee142d4d2bc246bec3ea995bfdfb987ea1f7d041ad6d349bdfd7887f2d14b9
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.17
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2130
+Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.17_all.deb
+Size: 674522
+MD5sum: 05702b95c30aca09de5584064cd0ff79
+SHA1: 91b53073460424c5232fbdb9a728d99d0cbc7d44
+SHA256: 668d650388b0c6f0ba23fbb273ebd6a4fc0f94a472ac2df3a49d27cdd2b7d96a
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.18
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2130
+Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.18_all.deb
+Size: 674516
+MD5sum: 6762854a774a217d061d97937b4c9d77
+SHA1: 2dd736456988258c2e3c070c09c45157a91daa15
+SHA256: a04d42666c9a053720dafbeb2f54e0dc92e9051adcb15e99d8d1424b49212995
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.2
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 723
+Depends: python3 (>= 3.5), crudini, pulseaudio, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.2_all.deb
+Size: 314160
+MD5sum: ba30ce865542c176bb89d7876daa0deb
+SHA1: c7272dcb2d0df866032c5da76d31d0f53abdbdc1
+SHA256: 9fbe0fd8d6ffddaf07c1ebd2b1f53b4c51e384d21ad57fa3984b8bb4b8932729
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.3
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 723
+Depends: python3 (>= 3.5), libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libportmidi-dev, crudini, pulseaudio, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.3_all.deb
+Size: 314174
+MD5sum: 3bd72c7eb432a236aeed8f5abd68e97c
+SHA1: 5541816f71eb1f0d496ea82f8a6470e12da6dc96
+SHA256: 94c927136036b52d96ae5b763960b5ddbf33e4e03634022a482e790066a6a551
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.4
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 726
+Depends: python3 (>= 3.5), libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libportmidi-dev, crudini, pulseaudio, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.4_all.deb
+Size: 315448
+MD5sum: 028df82fd87b7783ded1ade2ca872318
+SHA1: a6cf96497e475523c892890f6590f043e34cbb39
+SHA256: 69643854b259ae2b96e3e2c466bed6c50f33e8dfe128a6b661f2dbd5c00d2e80
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.5
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 726
+Depends: python3 (>= 3.5), libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libportmidi-dev, crudini, python3-sdl2, python3-systemd, msmtp, msmtp-mta, unattended-upgrades, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.5_all.deb
+Size: 315446
+MD5sum: 0ed8367f84484a7f390e3509c3cf1716
+SHA1: a3a6e3433cb6b0a7386960e5c1509cc80ee4d9f5
+SHA256: 4c550b2f4c131fe17133ea5b401c8f1a73520a34b29eef47e20622920f37973b
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.6
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 726
+Depends: python3 (>= 3.5), crudini, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.6_all.deb
+Size: 315398
+MD5sum: 256ab952a5184bfb2ca8d3d2d8aa0af9
+SHA1: 217a7b9250aedf534ece1d88b866eb4f20d98b4f
+SHA256: 6885104be331796316d28e0c0e668174726575e1ada7c98fd91d38a73b67906c
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.7
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 733
+Depends: python3 (>= 3.5), crudini, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.7_all.deb
+Size: 317112
+MD5sum: 036c47f93f8c4b6bc220aed5237c299c
+SHA1: e3799035f7b03f15924b974191d116cdcef084dd
+SHA256: 9c7ec2432a0ca526da7dc4d4f3a6418f1a4887e210724a5746c2118a18f59376
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.8
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 731
+Depends: python3 (>= 3.5), crudini, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.8_all.deb
+Size: 317068
+MD5sum: 25127922cccf8e9931a55fb1213c77a3
+SHA1: 72ceb61e390dc4d1d2141b8cfe75ff057bad4472
+SHA256: af087e17eb2dcda982bac3403098cc8723cdd13a38203afb40609140e0b1f0a0
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
+Version: 1.0.9
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 731
+Depends: python3 (>= 3.5), crudini, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.9_all.deb
+Size: 317070
+MD5sum: 096f6dcf5fc375520c80e625c6f7167b
+SHA1: 083a67c8de3a344a9edbdea5b6f6804729d31e25
+SHA256: 77ba19516fd6357b4348f5eca4e1980cc5528299b7b1e9e74672d841bf35cc3f
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+

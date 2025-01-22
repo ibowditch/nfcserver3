@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/nfcserver3.gpg] https://ibowditch.github.io/nfcserver3 ./

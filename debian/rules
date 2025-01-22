@@ -2,13 +2,30 @@
 
 export DH_VERBOSE = 1
 export DEB_BUILD_OPTIONS=nodoc
+#export PACKAGE_NAME=$(dpkg-parsechangelog -S Source)
+#    PACKAGE_VERSION=$(dpkg-parsechangelog -S Version | sed 's/-.*//')
+#    PACKAGE_NAME=$(dpkg-parsechangelog -S Source)
+#    PACKAGE_VERSION=$(dpkg-parsechangelog -S Version | sed 's/-.*//')
 
 %:
 	dh $@
+#    echo $PACKAGE_NAME
+#    dpkg-parsechangelog -S Source
+#	-sourcedirectory=/home/ian/PycharmProjects/nfcserver3
 #	--with-systemd
 
 override_dh_builddeb:
 	dh_builddeb -- -Zgzip
+#	--destdir=/home/ian/PycharmProjects/nfcserver3
+#	echo ${PACKAGE_NAME}
+#	echo ${DESTDIR}
+#	echo ${package}
+#	printenv
+#    PACKAGE_NAME=$(dpkg-parsechangelog -S Source)
+#    PACKAGE_VERSION=$(dpkg-parsechangelog -S Version | sed 's/-.*//')
+#    echo $${PACKAGE_NAME}
+#    echo $${PACKAGE_NAME}
+#	mv ../$${PACKAGE_NAME}_$${PACKAGE_VERSION}_*.deb /home/ian/PycharmProjects/nfcserver3/
 
 #override_dh_installinit:
 #    dh_installinit --name=nfcserver2
