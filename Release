@@ -1,21 +1,21 @@
 Components: nfcserver2
-Date: Wed, 22 Jan 2025 03:08:11 +0000
+Date: Wed, 22 Jan 2025 03:16:01 +0000
 Description: RFSTAG description
 Label: RFSTAGLabel
 Origin: RFSTAGorigin
 MD5Sum:
  630e454a5d579a95823c3763d0ae949f            12426 Packages
- b3a6816ec0aa6d773e14d4057988442d             2471 Packages.gz
- 92e120fb9d640ce063cdff2f70945a77              133 Release
+ 82658a2c7fe5c690a62ad2b16a1b0eda             2471 Packages.gz
+ ac61dbcb581e038bd8c4a8bae30417b0              133 Release
 SHA1:
  e4b1822144c8cc0b3cfba1c6c8946f7ec0d56436            12426 Packages
- b504edcc01ac28e2b30c0459ed0b70d05c14a03b             2471 Packages.gz
- 016e99595329ac16356c0e969c908eaf95b40daa              133 Release
+ cac441cc114afc0487f2d34aabd34e82f03b7540             2471 Packages.gz
+ f3325aa47c22bc3449dad19bb8f48ceca858c95e              133 Release
 SHA256:
  5da3a61e1db7ed79c8c608ec0c38b7d519cd1d3a56cae3577e2c5ea8cae3ce8e            12426 Packages
- 9722b36b2136e33d0b22f2fc855fbab0838ce075359bd9c2ddd94d2250487dd0             2471 Packages.gz
- 6e4901a57f75bb84813257cfd18827e467a3b436ecf01179d69560205abb8fab              133 Release
+ 59f5a6968266f160794b0c6f213dfe6996656feab777e632b196d2629de67e4c             2471 Packages.gz
+ 584c19a1d2a9d085b28dd0c8436113540076abc6eb1f2b9c72eefcce18b098a8              133 Release
 SHA512:
  88b6b4392d5d67b8d4eef4d1f64ed1aa4b5a8f9821301c4a87eaced5e2393f19309916a77be82b9937735bb93dfe617e5d7e4faaf9bbc562d7664e796c1b9ca1            12426 Packages
- 238e286ad8edcd5cd99c3a25b4bdba0abd7799c181c12a5a4858c34f30ae40430e3808fd86f1aa7302c259f78cbe39dc4ce1ead4705e5fa94e60ff410f60b7e4             2471 Packages.gz
- 1311d74a690403d4a668885b10036d6bb30e369a8825c1045ed9674dadb9aa548ef16ed05867fd1d00752f7d64b3e5e0d10a94d52883b241469a8bea679d05ef              133 Release
+ b0690e6dd7dd2fd0e042a9b244c30028d75ef05b90b25e6b54064cbd3403e44d6fc4f81912c914f723a81743397e9c717c446dd1d23448e38163254f4fe60508             2471 Packages.gz
+ e33f8fbd6d098673db6b5319c2cdf057a5cf0ca1249a7e5e5749f9b3eb412c791a80bda651907ad6a83028d0956b13b8bc0d2d9619bb6e92fc42f2262ff3eda7              133 Release
