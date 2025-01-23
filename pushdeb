@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
-# Packages & Packages.gz
-dpkg-scanpackages --multiversion . > Packages
-gzip -k -f Packages
-
-# Release, Release.gpg & InRelease
-apt-ftparchive release . > Release
-gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" -abs -o - Release > Release.gpg
-gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" --clearsign -o - Release > InRelease
+##!/usr/bin/env bash
+## Packages & Packages.gz
+#dpkg-scanpackages --multiversion . > Packages
+#gzip -k -f Packages
+#
+## Release, Release.gpg & InRelease
+#apt-ftparchive release . > Release
+#gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" -abs -o - Release > Release.gpg
+#gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" --clearsign -o - Release > InRelease
 
 # Commit & push
 #git add -A

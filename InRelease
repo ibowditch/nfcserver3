@@ -2,39 +2,39 @@
 Hash: SHA512
 
 Components: nfcserver2
-Date: Wed, 22 Jan 2025 03:16:01 +0000
+Date: Thu, 23 Jan 2025 02:55:58 +0000
 Description: RFSTAG description
 Label: RFSTAGLabel
 Origin: RFSTAGorigin
 MD5Sum:
- 630e454a5d579a95823c3763d0ae949f            12426 Packages
- 82658a2c7fe5c690a62ad2b16a1b0eda             2471 Packages.gz
- ac61dbcb581e038bd8c4a8bae30417b0              133 Release
+ bd4694caed7cd4ec4449fd67998f7ca8            13078 Packages
+ 09aa331bf399b060a14740f17028069e             2575 Packages.gz
+ ab770ba47c683ddcfa6651bf54861d0b              133 Release
 SHA1:
- e4b1822144c8cc0b3cfba1c6c8946f7ec0d56436            12426 Packages
- cac441cc114afc0487f2d34aabd34e82f03b7540             2471 Packages.gz
- f3325aa47c22bc3449dad19bb8f48ceca858c95e              133 Release
+ 69a3ec6d911f3d04dca5d02eff73bc22d051479e            13078 Packages
+ 98bb11942cf26dd88862b281f9d3b82e3ff66ac3             2575 Packages.gz
+ b31b4a7846dd2b8092c907cdb1fc020ce6ed29b1              133 Release
 SHA256:
- 5da3a61e1db7ed79c8c608ec0c38b7d519cd1d3a56cae3577e2c5ea8cae3ce8e            12426 Packages
- 59f5a6968266f160794b0c6f213dfe6996656feab777e632b196d2629de67e4c             2471 Packages.gz
- 584c19a1d2a9d085b28dd0c8436113540076abc6eb1f2b9c72eefcce18b098a8              133 Release
+ 037cd0656ebae984f6eee37d07485afc171b27271edcef385f71e31b8cbdc94a            13078 Packages
+ 62f7aff1e9b6593bc3dca1cf3f54c45abdb683383b546ad90ed174edac67430f             2575 Packages.gz
+ 227f19976913f202af3fe550625716b51b5ada4325e0e734dd1794b3cb89cd9c              133 Release
 SHA512:
- 88b6b4392d5d67b8d4eef4d1f64ed1aa4b5a8f9821301c4a87eaced5e2393f19309916a77be82b9937735bb93dfe617e5d7e4faaf9bbc562d7664e796c1b9ca1            12426 Packages
- b0690e6dd7dd2fd0e042a9b244c30028d75ef05b90b25e6b54064cbd3403e44d6fc4f81912c914f723a81743397e9c717c446dd1d23448e38163254f4fe60508             2471 Packages.gz
- e33f8fbd6d098673db6b5319c2cdf057a5cf0ca1249a7e5e5749f9b3eb412c791a80bda651907ad6a83028d0956b13b8bc0d2d9619bb6e92fc42f2262ff3eda7              133 Release
+ 9072581b5b4233512fd382536ff1bfb361d4373d6c4861f1569b8dc3e996ec45dedc8bd71a959003bfb338e8485550419fd95c87f1c97ab1fea89e9b4b6717d2            13078 Packages
+ b7a8b23585edaf7013aa397782b7f88b4fd0b3f851e91711d5b644e6a3e61c5d940ae635be77da6030b2598ce907d0ed28f5cfed6e1dbb6004326ec172f62435             2575 Packages.gz
+ 4bd581a8689e2e3f043553ac4809747a176844daf44e7d8e21529b09ff40d2e2571a75ec85d893f4d25f5b0e76de1ca4789841c8034b29e50a2ce8057af67ea5              133 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEcGTAh2FXz+ZVO+uteHtPbE1/euUFAmeQYvEACgkQeHtPbE1/
-euWX+g/9Hrd+pMx0q5Zy4XG0AsTSF54RW30r8kYySVcptJJe1+MdTTE5msGnV5sw
-riwKT81X/etsrQ52Jv+TuEGAz7Ahwlwv38Eaot+52RSSXrHx9VbGxKoYnBNG6Wn6
-ocqQFGbV0fNvJza7sOVulJ17DaToVdBkt2XH3cB5hgkX6p20bG2TXJfGj4GZEPX4
-CIcS/zuhsG+7k7r/srLITqZ+pC4CoYDO49BFWNfmOw+KII1COl9hUxKBQjp2gZPE
-yPaksTtke9sNIt21nfcX5xT++GVEHa0tYgyopTHWYgbou/+pDDEQjZuFj+CMopzz
-GiZN1vV12SYwGwYeAKaR6D2HGZ48CSVYBI8w0VTuN07VT8ZH2v6nOHK2SlQJkcb/
-ujTOW/gh3v7rXBwo3Q+4JNlg+FX+P9dN0HwTq7RdHrOBr0PSqCN3knnLUHSFpVQq
-fnGZwHxE0/U4PVwv8FjN+7txyip4GAnJ6fRtaGvllfr3XXqw0vu5eJaHZnbmPU79
-B9zdEawUwn9AhCqqhrxjtlrDQB3KUyhGmq4Q6ZaJ6ifyWv2x1gsg284CYbFgePNi
-XTsqLsTf3j8w+DlpXvp05TQU+CKjVzbMXm/m9rB8V5/Ub6kTCRKb1NO/3XW1t6o9
-1TG/83maPyu6t0hMnFTuFGqOl7gdqoOd0JLAbLn1wBs6ZBoyPwQ=
-=iJo4
+iQIzBAEBCgAdFiEEcGTAh2FXz+ZVO+uteHtPbE1/euUFAmeRr74ACgkQeHtPbE1/
+euXXYw//QM8MEAv+CH7+Dm/rn+3bLKX47i1bYbCzfCuiFI/czA9CbPsageducuVq
+Dp6eTUa2+liOu4btMZ37qH4Fs/ztM81RTpn9hnf1tTvzHLs5GmS97wAwIvSrZF4M
+S8eJHp18bc5H9S9h90DYbNZdD1VWdU+C/5VKy5s9yArc+Vic/I9wMNtLO1orhdh0
+KD8R7UGWZA8drs9XQ6asMojkDmFPhL/rpdteTkxieywQ/hfGDl+F04A2wfrWw5Zw
+4fe5l2HrFqdUc0KANX6Ehr52fR6LCgeNmdkmp6dwRNS6Gy4ZFylOo29hgVndojfh
+L13z97pumQqwjgNOvHpTDy9cs14rRr3Mi9+Ikzl3aw42QzZ5HIZJIWng5WycPtU8
+mz6yE037aBj6OOivk8mw2W2lpIGwHqO6puojrLZhxzhPLcCbKD6rPbAuhaj+rWEx
+dSkfdCftYjgxS8tzZNTzsi7vx3ekQHk92+8roavXyDdbfQ7T5GglK2IUT/bReueW
+HXNnbA0vV5q8gmibDPhDnR6GDV7VZ0MlvokBxthoAS38pdG2ZQfC0K3JQLvPJAHB
+sQZuuVbBU/ThQ9MtQIoeGfwpEZuVw0NuvLCKVc5M3S+okcNjCni7x0HMli3e8LuI
+vuYZQbS3Ei46/8/etYHP03iBz6BSxPag8hue9RDe+n7IRp/AXow=
+=UZR7
 -----END PGP SIGNATURE-----
