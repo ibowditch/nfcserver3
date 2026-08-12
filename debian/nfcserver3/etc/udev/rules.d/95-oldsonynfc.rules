@@ -1,0 +1,4 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c1", GROUP="plugdev", TAG+="systemd", ENV{SYSTEMD_WANTS}+="nfcserver3.service"
+SUBSYSTEM=="usb", ACTION=="remove", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c1", GROUP="plugdev", TAG+="systemd"
+SUBSYSTEM=="usb", ACTION=="add", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c3", GROUP="plugdev", TAG+="systemd", ENV{SYSTEMD_WANTS}+="nfcserver3.service"
+SUBSYSTEM=="usb", ACTION=="remove", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c3", GROUP="plugdev", TAG+="systemd"

@@ -1,14 +1,32 @@
-##!/usr/bin/env bash
-## Packages & Packages.gz
-#dpkg-scanpackages --multiversion . > Packages
-#gzip -k -f Packages
-#
-## Release, Release.gpg & InRelease
-#apt-ftparchive release . > Release
-#gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" -abs -o - Release > Release.gpg
-#gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" --clearsign -o - Release > InRelease
+#!/usr/bin/env bash
 
-# Commit & push
-#git add -A
-#git commit -m update
-#git push
+# see https://gemini.google.com/app/ad7dac3f91d14323
+
+set -euo pipefail
+
+KEY_ID="7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5"
+
+echo "==> Indexing packages..."
+# /dev/null suppresses missing override file warnings
+dpkg-scanpackages --multiversion . /dev/null > Packages
+gzip -k -f Packages
+
+echo "==> Generating Release file..."
+apt-ftparchive release . > Release
+
+echo "==> Signing Release file..."
+gpg --batch --yes --default-key "$KEY_ID" -abs -o Release.gpg Release
+gpg --batch --yes --default-key "$KEY_ID" --clearsign -o InRelease Release
+
+echo "==> Committing and pushing to Git..."
+git add -A
+
+# Only commit if there are staged changes
+if ! git diff --cached --quiet; then
+  git commit -m "Update APT repository [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+  git push
+else
+  echo "No repository changes detected. Skipping push."
+fi
+
+echo "==> Repository updated successfully!"
