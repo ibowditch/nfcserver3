@@ -13,7 +13,12 @@ dpkg-scanpackages --multiversion . /dev/null > Packages
 gzip -k -f Packages
 
 echo "==> Generating Release file..."
-apt-ftparchive release . > Release
+# apt-ftparchive release . > Release
+# Release, Release.gpg & InRelease
+apt-ftparchive -c apt-ftparchive.conf release . > Release
+gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" -abs -o Release.gpg Release
+gpg --default-key "7064C0876157CFE6553BEBAD787B4F6C4D7F7AE5" --clearsign -o InRelease Release
+
 
 echo "==> Signing Release file..."
 gpg --batch --yes --default-key "$KEY_ID" -abs -o Release.gpg Release
