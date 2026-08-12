@@ -21,14 +21,15 @@ CRUDINI=/usr/bin/crudini
 BRIG=${KIOSK_BRIGADE:-$(hostname)}
 SERV=${BUSHFIRE_SERVER}
 KLOC=${KIOSK_LOCATION}
+SCH=${SCHEME:-'https'}
 
 KPROFILE=${KIOSK_CHROME_PROFILE:-/home/pi/.config/chromium}
 
 KURI=$($CRUDINI --get $INIFILE $INISECTION KIOSK_URI)
 
-KIOSK_URL='https://'$BRIG'.'$SERV'/'$KURI'/'$KLOC
+KIOSK_URL="${SCH}://${BRIG}.${SERV}/${KURI}/${KLOC}"
 
-# echo "KIOSK_URL" $KIOSK_URL > ~/klurl
+echo "KIOSK_URL" $KIOSK_URL > ~/klurl
 
 # Clear cache before starting to force reload - especially after new releases
 [ -d $KPROFILE/Default/Cache ] && rm -rf $KPROFILE/Default/Cache/*
