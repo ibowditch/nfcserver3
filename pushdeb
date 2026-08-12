@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # see https://gemini.google.com/app/ad7dac3f91d14323
+# check
 
 set -euo pipefail
 
