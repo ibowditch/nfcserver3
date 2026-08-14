@@ -1,4 +1,6 @@
 ./conf/90-nfcdev.rules
+./conf/91-nfckiosk.rules
+./conf/92-vtapreader.rules
 ./conf/95-oldsonynfc.rules
 ./conf/base.env
 ./conf/local-example.env
@@ -12,6 +14,8 @@
 ./systemd/launch_kiosk2.service
 ./systemd/nfcserver3.service
 ./systemd/kiosk_beeper.service
+./systemd/nfckiosk.service
+./systemd/vtapreader.service
 ./utils/addrepo
 ./utils/dwagent.sh
 ./docs/hello-world.1

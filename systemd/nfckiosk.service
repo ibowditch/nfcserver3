@@ -1,0 +1,33 @@
+[Unit]
+Description=NFC Reader and Kiosk Beeper Service
+After=network-online.target sound.target
+Wants=network-online.target sound.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+
+# Environment Variables
+Environment="PYTHONUNBUFFERED=1"
+# Required for ALSA/PulseAudio sound playback under systemd
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+
+# Load environment configuration files
+EnvironmentFile=/etc/profile.d/rfstag/base.env
+EnvironmentFile=-/home/pi/.config/rfstag/local.env
+
+# Execution
+ExecStart=/usr/bin/python3 /usr/bin/nfc_kiosk_combined.py
+
+# Auto-Restart Configuration
+Restart=always
+RestartSec=5s
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

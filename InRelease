@@ -4,39 +4,39 @@ Hash: SHA512
 Architectures: all armhf arm64
 Codename: ./
 Components: main
-Date: Wed, 12 Aug 2026 04:44:32 +0000
+Date: Fri, 14 Aug 2026 05:53:21 +0000
 Label: RFSTAGLabel
 Origin: RFSTAGorigin
 Suite: stable
 MD5Sum:
- c238b9e973f0f77e634293dab134e1a9            13730 Packages
- 230bb2b97a388acb423ccbaa938a7501             2682 Packages.gz
- 3b1e5e7e9e5d5f33e353ab4b5837937f              153 Release
+ 0111a39584ea81ee94814eecd86e90c6            14382 Packages
+ 4093e9f24320080c2cc2909a8b226777             2784 Packages.gz
+ a937c4473ff37f337b35ed9174082de5              153 Release
 SHA1:
- 44c719eb70302a11f033858c99a363b7eb0063a9            13730 Packages
- dc706d7572690125ae6f4bbba3c6b1ac0bdd8725             2682 Packages.gz
- 1549b13be7b902aaac1bde231a29bbd63e4e2e51              153 Release
+ 81b84d6018b6e010aa38873cc0f6d228f162794d            14382 Packages
+ 9a4e39ceb9d5663db43f6c1f1218a0e9c3baddd7             2784 Packages.gz
+ 821a588ef03e32de874d8628690c0a5742f69020              153 Release
 SHA256:
- 3d212aed5266743af31f232ef4bfe617b7566644a3ca254114432ea94b0fde5b            13730 Packages
- 11ace434c34f8ece27c00084568159120f040a38d255c24620d43df70a5cfede             2682 Packages.gz
- c50554d812b84334791d00e57935f70d504ca5fbf3ccd8e2d2637d0bf624117a              153 Release
+ d51f6a6d8bd27fd51ebde475396d08686f541bfd00f09fd42eca95c3c967d762            14382 Packages
+ a4835350dca10949f33e9aa60e8ae529a9c361fea074e4978b6631c7cc79c90e             2784 Packages.gz
+ ef0717017b1f5f60ded003836036a3349d510ab7f4eac3417f51ced8e7cacbf2              153 Release
 SHA512:
- dd49ef1ad2e8eff8c72e449aa8a200574c23bf2eadb5e5e2f773a8ae026074f294cefb402f41593f5abbf460bbcf4641d80325dd2cb1935e6e3cb17225715fe4            13730 Packages
- 35b1cf44b72078e07fdbfc76684d4d1851300cb716f846d37bf10fed9f1bf2c5a9412b8b7f950394f5c5d5e8f4518a114cb940284f78ae1f64ec7dd1825c9112             2682 Packages.gz
- 0cb98fd7df448a7b38809b808564a7f9a67fa2628cbe4a14678e7d19f1adc10c69ea8ba89b270e71c5b758a62a4581b2fbdf944fc05a836cf59579b31ab1b96f              153 Release
+ c9944c720c83dde9c73ac8168e3f02f427c779418f138bdb9b866d14e7e19cfedd5a790d66b2152eee04859caf706cc7be95d1c524cee55358489733e684c6ce            14382 Packages
+ 21658e7b25c6d7c82cee0b1a8290e61e638b7f78d992ce81a5e13c5ddbcd7f7860eda126e1b417a1ed9e7f98be65e83b42a2e84c1c786a507670601fbd35ab8a             2784 Packages.gz
+ b46e94dd68b96814aa0f9e26935fd9d1b738a61be7799b972ad50353fb363f6ebd1686a5d63118bae8863a008d72a692e0a9ca3ddf19324bd137d8eb795f9728              153 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEcGTAh2FXz+ZVO+uteHtPbE1/euUFAmp7+jsACgkQeHtPbE1/
-euVSshAAp8mChxWiiIkpyXEKLR/YagGRT8kbQNjq0t7pzCfoAHw70OP3yQh8qZS7
-Gj7nTh7utd+vdPSc96OeqG20sF7aDdEcqMNfqSfvQVEpEclMEeNne2DXDhsc+1lt
-/wBnmNwoXrDkvb/vwEaXStBkdmmTlClaR9NCITEhjVzH7Z2E8yEDZ0Dcdw9LUVht
-AikTrh1GZPzj553meXMlvDW23ZtDRORVT8T7dgASPBL+/hqqqymb9F+tS68QjQvd
-EbuihG2CeWZVdul8wHRbbhQG3H+m6FYNACz5KHNHdOcXzPn2g+4tmCWZWEOkNkcm
-n5i9yFd2fGH23+KE2JveYTA4LfrCaun1lk0YlgNi9bwPd2vLAqDAuZOzAogMAjvz
-0cRTXuYW8HZKb1xEznzhtMJCAzq2V1J+bTsI71NFPwtra3gSI+rINUUkreGMnzZm
-qpVWYXSz6whVVHQUHVRY9LpqGX6ySun12/rmP51z58TaSoCrEttVJpBn5XegsPGo
-uKkURgQdeBT7NmP0hFdq2HbGVtljy81JSRM8vMYQ0kSamGrNWTzqLD9RQl6IIVAX
-hEj1DJ//SeV0NJTRZfzYZyUKMkHroVFJELrNe45aSYhHDLUirFyjXAuhwFU2awKQ
-L8genZzOaMbjADK9GBU8xdtDG6GXGvss1loTSBtz+ycxHFzn/00=
-=h+jl
+iQIzBAEBCgAdFiEEcGTAh2FXz+ZVO+uteHtPbE1/euUFAmp+rWUACgkQeHtPbE1/
+euWK7xAAmYVi9WLy8eFzcsPmsxxVI/OaE1FT9epQ7GP0s5jF60RVuYalfgkw4+VZ
+KUbyNUjIj0F5lBHoE+aXlFKyqJtwNHXg/Wgi3iXjIXoVV3yR97MjD0lg609NIgVy
+7ESEGhLxA9eStKAUiwS5jP/8FPwSAveMvUA9pPauPZ7L+/fKL8y5CD3IrT0XZOj1
+jKrFB9CTZdoqCkHAreO9lj6qiO2SWJfgfb7kGB3yLqOfksaFR1S2TaTrjbz8kdel
+M4tEfjByrgyjDJUaTpb8JFgVcg/kDOzU/NPuPWCuev8XV65qUsVE4xhYYUia0ooh
+iuOSUOWGtWfPsxqK2W6hkaEdFv//2Hq269qlnaBTtaQhCqZ+yqVlglRUW8FCScJR
+K1v4B+RfwhhGxoA3diOiwx5Qwtuti7s822oksKdQ/bfFh1VW95bzgM+UqXf3ii4c
+V32LCmgbLKb0pQpViRQh7nxIfcywGpmTcN/edzZwxuHOEIYxisB1RfklO1lRvp7p
+PxxDw/lDX7MhvO87s6lOAGJqoJfRxhaiPkvdriPrrr4OpY8Y3tGpOXU0fxiZiMxM
+tR5eUkPn6cIOHo9tbLBFTRTrRxW1HZFlsIG1nEhrlZAttHhyCMTdvHhC0UocAu91
+KTNwyjgPxg83NZZDDwneVl9+Vo+0wGOJ6jPVMuNwoKkUl4qikpY=
+=+Eez
 -----END PGP SIGNATURE-----
