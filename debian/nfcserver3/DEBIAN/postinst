@@ -34,22 +34,22 @@ echo "postinst" $(hostname) | systemd-cat -t rfstag -p info
 
 # Start next gen services
 # Service is sometimes masked after install, so fix this here
-systemctl unmask nfcserver3
-# stop any running version, so new one can be run up.
-systemctl stop   nfcserver3
-# Enable to start by default on reboot: will be started if reader connected.
-systemctl enable nfcserver3
-systemctl start  nfcserver3
+#systemctl unmask nfcserver3
+## stop any running version, so new one can be run up.
+#systemctl stop   nfcserver3
+## Enable to start by default on reboot: will be started if reader connected.
+#systemctl enable nfcserver3
+#systemctl start  nfcserver3
 
 systemctl unmask launch_kiosk2
 systemctl stop   launch_kiosk2
 systemctl enable launch_kiosk2
 systemctl start  launch_kiosk2
 
-systemctl unmask kiosk_beeper
-systemctl stop   kiosk_beeper
-systemctl enable kiosk_beeper
-systemctl start  kiosk_beeper
+#systemctl unmask kiosk_beeper
+#systemctl stop   kiosk_beeper
+#systemctl enable kiosk_beeper
+#systemctl start  kiosk_beeper
 
 # pipx ensurepath
 

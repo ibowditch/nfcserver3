@@ -3,8 +3,8 @@
 # Allow user to write new tags. Stop existing service, then restart when done so tagging can continue
 echo "Taking over NFC reader..."
 
-NFC_SERVER=nfcserver3
-NFC_READER=nfcreader
+NFC_SERVER=sony-reader
+NFC_READER=nfckiosk
 sudo systemctl stop $NFC_SERVER
 sleep 5
 

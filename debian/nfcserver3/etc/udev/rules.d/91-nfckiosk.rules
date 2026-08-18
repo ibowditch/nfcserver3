@@ -1,1 +1,10 @@
-SUBSYSTEM=="usb", ACTION=="add", ATTRS{product}=="RC-S380/S", ATTRS{manufacturer}=="SONY", GROUP="plugdev", TAG+="systemd", ENV{SYSTEMD_WANTS}+="nfckiosk.service"
+# Sony PaSoRi NFC Reader (RC-S380 models 06c1 & 06c3)
+
+# 1. Set permissions, create symlink, and START service on plug-in
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="06c[13]", MODE="0666", GROUP="plugdev", SYMLINK+="sony_reader", TAG+="systemd", ENV{SYSTEMD_WANTS}="sony-reader.service"
+
+# 2. STOP service when unplugged
+ACTION=="remove", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="54c/6c1/*", RUN+="/bin/systemctl stop sony-reader.service"
+ACTION=="remove", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ENV{PRODUCT}=="54c/6c3/*", RUN+="/bin/systemctl stop sony-reader.service"
+
+#SUBSYSTEM=="usb", ACTION=="add", ATTRS{product}=="RC-S380/S", ATTRS{manufacturer}=="SONY", GROUP="plugdev", TAG+="systemd", ENV{SYSTEMD_WANTS}+="nfckiosk.service"

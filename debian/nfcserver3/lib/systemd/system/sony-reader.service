@@ -1,0 +1,28 @@
+[Unit]
+Description=NFC Reader and Kiosk Beeper Service
+After=network-online.target sound.target
+Wants=network-online.target sound.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+
+# Environment Variables
+Environment="PYTHONUNBUFFERED=1"
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+
+# Load environment configuration files
+EnvironmentFile=/etc/profile.d/rfstag/base.env
+EnvironmentFile=-/home/pi/.config/rfstag/local.env
+
+# Execution
+ExecStart=/home/pi/.local/bin/nfckiosk
+
+# Auto-Restart Configuration
+Restart=on-failure
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target

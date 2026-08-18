@@ -1,23 +1,6 @@
 # Automatically added by dh_systemd_enable/13.14.1ubuntu5
 if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
 	# The following line should be removed in trixie or trixie+1
-	deb-systemd-helper unmask 'kiosk_beeper.service' >/dev/null || true
-
-	# was-enabled defaults to true, so new installations run enable.
-	if deb-systemd-helper --quiet was-enabled 'kiosk_beeper.service'; then
-		# Enables the unit on first installation, creates new
-		# symlinks on upgrades if the unit file has changed.
-		deb-systemd-helper enable 'kiosk_beeper.service' >/dev/null || true
-	else
-		# Update the statefile to add new symlinks (if any), which need to be
-		# cleaned up on purge. Also remove old symlinks.
-		deb-systemd-helper update-state 'kiosk_beeper.service' >/dev/null || true
-	fi
-fi
-# End automatically added section
-# Automatically added by dh_systemd_enable/13.14.1ubuntu5
-if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
-	# The following line should be removed in trixie or trixie+1
 	deb-systemd-helper unmask 'launch_kiosk2.service' >/dev/null || true
 
 	# was-enabled defaults to true, so new installations run enable.
@@ -35,34 +18,17 @@ fi
 # Automatically added by dh_systemd_enable/13.14.1ubuntu5
 if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
 	# The following line should be removed in trixie or trixie+1
-	deb-systemd-helper unmask 'nfckiosk.service' >/dev/null || true
+	deb-systemd-helper unmask 'sony-reader.service' >/dev/null || true
 
 	# was-enabled defaults to true, so new installations run enable.
-	if deb-systemd-helper --quiet was-enabled 'nfckiosk.service'; then
+	if deb-systemd-helper --quiet was-enabled 'sony-reader.service'; then
 		# Enables the unit on first installation, creates new
 		# symlinks on upgrades if the unit file has changed.
-		deb-systemd-helper enable 'nfckiosk.service' >/dev/null || true
+		deb-systemd-helper enable 'sony-reader.service' >/dev/null || true
 	else
 		# Update the statefile to add new symlinks (if any), which need to be
 		# cleaned up on purge. Also remove old symlinks.
-		deb-systemd-helper update-state 'nfckiosk.service' >/dev/null || true
-	fi
-fi
-# End automatically added section
-# Automatically added by dh_systemd_enable/13.14.1ubuntu5
-if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
-	# The following line should be removed in trixie or trixie+1
-	deb-systemd-helper unmask 'nfcserver3.service' >/dev/null || true
-
-	# was-enabled defaults to true, so new installations run enable.
-	if deb-systemd-helper --quiet was-enabled 'nfcserver3.service'; then
-		# Enables the unit on first installation, creates new
-		# symlinks on upgrades if the unit file has changed.
-		deb-systemd-helper enable 'nfcserver3.service' >/dev/null || true
-	else
-		# Update the statefile to add new symlinks (if any), which need to be
-		# cleaned up on purge. Also remove old symlinks.
-		deb-systemd-helper update-state 'nfcserver3.service' >/dev/null || true
+		deb-systemd-helper update-state 'sony-reader.service' >/dev/null || true
 	fi
 fi
 # End automatically added section
@@ -92,7 +58,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-decon
 		else
 			_dh_action=start
 		fi
-		deb-systemd-invoke $_dh_action 'kiosk_beeper.service' 'launch_kiosk2.service' 'nfckiosk.service' 'nfcserver3.service' 'vtapreader.service' >/dev/null || true
+		deb-systemd-invoke $_dh_action 'launch_kiosk2.service' 'sony-reader.service' 'vtapreader.service' >/dev/null || true
 	fi
 fi
 # End automatically added section
