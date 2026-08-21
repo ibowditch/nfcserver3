@@ -1,23 +1,23 @@
 Architectures: all armhf arm64
 Codename: ./
 Components: main
-Date: Fri, 21 Aug 2026 03:50:04 +0000
+Date: Fri, 21 Aug 2026 04:15:20 +0000
 Label: RFSTAGLabel
 Origin: RFSTAGorigin
 Suite: stable
 MD5Sum:
- e1d92833ab589dfad5eee179368a23de            15686 Packages
- 5c85cc8c7ff8029f0ecb335e9fdb87ff             2989 Packages.gz
- 40a936dfa421273e0dd905d3f4438b8a              153 Release
+ e766448c745cdaf8753488fa45d3eb10            16363 Packages
+ cbffd1ac9a5bd2a7861030b0a0a1a691             3107 Packages.gz
+ be1971961ea567b343e7baa23ef6191a              153 Release
 SHA1:
- 3cf2296511572e562a02eda6d47efbd6c32391b6            15686 Packages
- 5a83975e12c976df2659213b06806a2728493d02             2989 Packages.gz
- 5ad7d146cc1648855ae411543e37acaec7d9f87e              153 Release
+ 48ea1ce78030612e3ec2c894f13bb29d957746f9            16363 Packages
+ 33208d6c26c258d739acc51a86a403c9c02c475c             3107 Packages.gz
+ 6bac63848a9b87f89673bc77fecb8243ccd0a3b0              153 Release
 SHA256:
- f132361e7e6f1ec66b8887f6443a9cf64c23aba8ce2c8e86976514483022c5f2            15686 Packages
- 4fb14e3e5f98d7f104dc34ee18e95c0c81d61f9f5c45e22fdc57dd5170cda1b6             2989 Packages.gz
- 282da1a19aa286af42ce9ee5c86b0c98fc83e8240348510be0a59252742744fd              153 Release
+ 85260f74b92c8c34676900702333ffc313e25c8be380cd698a6a51fd4d64439c            16363 Packages
+ a98bbbc13f3f85e6683126215733b14fccdc32bbb5ef8acafe376346be883d0a             3107 Packages.gz
+ 0b721e25e88a764493e1c13cf5a186446ad0e135c34e986af2b208ea6fa3bf0c              153 Release
 SHA512:
- bc59e21be2b9817e3bf53d9d3b22513c2a05213deb3e615c8789a8302dfc363bd08e2a5d0fce198440a5bd8e8e151f130f4dbb25c74065098d74bee6e2a4bd3a            15686 Packages
- ee319722d4ac6c9dffcc767a1cb4eb68094b819807e9077a07b0960e7c0bd22275b3c0ddb2dfcf303773bf1e93de6b26805df84d65b8f48b87e4ef7fc3e5eec5             2989 Packages.gz
- 5751d4165be7271e44b1b48331e12ea9e86e035d379879284a5468bc6e7810cc9bfec6fb50d8a761f4b7238ef9cbaddedbd5733714de849252c2b0b03da55f26              153 Release
+ a5ef17601a702fad71ae6674da3e7048a33419a4805efd4441bcd884710885667d50651762c43a7fd240c99bdc77c30a4b454bdb4f67ce697fa8c034abb59343            16363 Packages
+ bde51d568daaa38bd77ea89b3b756a99e39816b38403c2b0949374d6d8f5f2ce0185ca9b3959e596239dc12331a02f2e9786fb647fa23cb411129123f8615cd1             3107 Packages.gz
+ f2b2bb31f3713e0bcbe863ee2393900245fd6fac207945727fe0829ac5ccb52ef1f79eb56eeffd53969b01843974caa24dbf277be0ee253ba3e46d458d7055e1              153 Release
