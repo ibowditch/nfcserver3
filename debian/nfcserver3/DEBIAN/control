@@ -1,10 +1,10 @@
 Package: nfcserver3
-Version: 1.0.26
+Version: 1.0.28
 Architecture: all
 Origin: ianbowditch
 Maintainer: John Doe <johndoe@example.com>
 Installed-Size: 2132
-Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, pipewire-alsa | libasound2-plugins | libasound2-plugin-pulse, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libasound2-plugins, pipewire-alsa | pulseaudio-utils, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
 Section: python
 Priority: optional
 Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file

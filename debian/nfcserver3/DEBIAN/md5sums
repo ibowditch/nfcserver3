@@ -13,6 +13,6 @@ b711a6f04eb80171b01db63acf2a942e  lib/systemd/system/vtapreader.service
 3e290a6dbe4ab966f5d15f868c49b210  usr/bin/dwagent.sh
 685f0c4d09ed7265b6e5a4eb35438905  usr/bin/launch_kiosk2
 a00ad78b53db6caeef10584d4064317d  usr/bin/writetags
-f4e5558ee2b5ec07ebb5166283f21ce9  usr/share/doc/nfcserver3/changelog.gz
+e1b0d0420815dd81b6d480eb96ed50a2  usr/share/doc/nfcserver3/changelog.gz
 c3333f503e17af49aaeec614336923e9  usr/share/doc/nfcserver3/copyright
 a560af5c394001ebc134a7d538175f63  usr/share/man/man1/hello-world.1.gz
