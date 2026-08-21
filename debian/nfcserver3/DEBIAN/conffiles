@@ -1,3 +1,4 @@
+/etc/asound.conf/asound.conf
 /etc/profile.d/rfstag/base.env
 /etc/udev/rules.d/91-nfckiosk.rules
 /etc/udev/rules.d/92-vtapreader.rules

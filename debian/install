@@ -5,6 +5,7 @@ conf/92-vtapreader.rules etc/udev/rules.d
 conf/base.env etc/profile.d/rfstag
 conf/local-example.env home/pi/.config/rfstag
 conf/nfcreader.ini     home/pi/.config/rfstag
+conf/asound.conf etc/asound.conf
 # Only include if reboot needed ###
 music/*.wav home/pi/Music
 systemd/launch_kiosk2.service lib/systemd/system

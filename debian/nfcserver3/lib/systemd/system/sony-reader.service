@@ -1,7 +1,7 @@
 [Unit]
 Description=NFC Reader and Kiosk Beeper Service
-After=network-online.target sound.target
-Wants=network-online.target sound.target
+After=network-online.target sound.target user@1000.service
+Wants=network-online.target sound.target user@1000.service
 
 [Service]
 Type=simple
@@ -16,6 +16,10 @@ Environment="XDG_RUNTIME_DIR=/run/user/1000"
 # Load environment configuration files
 EnvironmentFile=/etc/profile.d/rfstag/base.env
 EnvironmentFile=-/home/pi/.config/rfstag/local.env
+
+# Universal Audio Environment Variables for PipeWire (Trixie) and Pulse/ALSA (Bookworm)
+Environment="PULSE_SERVER=unix:/run/user/1000/pulse/native"
+Environment="ALSA_CARD=Headphones"
 
 # Execution
 ExecStart=/home/pi/.local/bin/nfckiosk

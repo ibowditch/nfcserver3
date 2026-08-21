@@ -3,6 +3,7 @@
 ./conf/base.env
 ./conf/local-example.env
 ./conf/nfcreader.ini
+./conf/asound.conf
 ./music/choose.wav
 ./music/invalid.wav
 ./music/noevent-orig.wav

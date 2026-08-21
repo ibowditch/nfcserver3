@@ -41,6 +41,16 @@ echo "postinst" $(hostname) | systemd-cat -t rfstag -p info
 #systemctl enable nfcserver3
 #systemctl start  nfcserver3
 
+# Ensure audio group access
+usermod -aG audio pi || true
+
+# Enable loginctl lingering so PipeWire user-session runs at boot on Trixie
+if command -v loginctl >/dev/null 2>&1; then
+    loginctl enable-linger pi || true
+fi
+
+
+
 systemctl unmask launch_kiosk2
 systemctl stop   launch_kiosk2
 systemctl enable launch_kiosk2

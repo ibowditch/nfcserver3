@@ -7,12 +7,12 @@
 762d12eab9be84f5cce760fc69a676ad  home/pi/Music/signin.wav
 74922c8292afc920a30e238b3a109550  home/pi/Music/signout.wav
 5f568b5f30a4cd3484e338a834a30f07  lib/systemd/system/launch_kiosk2.service
-1681d543c6ebf5354de0b42d92de8107  lib/systemd/system/sony-reader.service
+dd82a9ccdfef8a06baab13b18fde0671  lib/systemd/system/sony-reader.service
 b711a6f04eb80171b01db63acf2a942e  lib/systemd/system/vtapreader.service
 4450d8b1f6cc0f724be3b6dbc2f4bade  usr/bin/addrepo
 3e290a6dbe4ab966f5d15f868c49b210  usr/bin/dwagent.sh
 685f0c4d09ed7265b6e5a4eb35438905  usr/bin/launch_kiosk2
 a00ad78b53db6caeef10584d4064317d  usr/bin/writetags
-e8986714285cda6694f9403e1ef08b50  usr/share/doc/nfcserver3/changelog.gz
+f97e0710cb3fa5f454a6af4db1985ae9  usr/share/doc/nfcserver3/changelog.gz
 c3333f503e17af49aaeec614336923e9  usr/share/doc/nfcserver3/copyright
 a560af5c394001ebc134a7d538175f63  usr/share/man/man1/hello-world.1.gz

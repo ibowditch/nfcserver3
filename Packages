@@ -255,6 +255,22 @@ Priority: optional
 Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
 
 Package: nfcserver3
+Version: 1.0.24
+Architecture: all
+Origin: ianbowditch
+Maintainer: John Doe <johndoe@example.com>
+Installed-Size: 2132
+Depends: python3 (>= 3.9), pipx, crudini, libasound2-dev, libsystemd-dev, python3-sdl2, python3-systemd, apt-listchanges, apt-show-versions, apt-config-auto-update
+Filename: ./nfcserver3_1.0.24_all.deb
+Size: 675320
+MD5sum: da72d205987e975e894dbc93c522b24a
+SHA1: 1294de7f287f490de0ab3757b12a63b2b0f534ae
+SHA256: 4c795d632fcbc1525e2ad420aa2c7cd4b69a9726a958e013ebdec97cfc87b04c
+Section: python
+Priority: optional
+Description: A simple nfcreader program to demonstrate how to package a Python 3 script as a deb file
+
+Package: nfcserver3
 Version: 1.0.3
 Architecture: all
 Origin: ianbowditch
