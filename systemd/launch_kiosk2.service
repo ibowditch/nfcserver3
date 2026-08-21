@@ -12,13 +12,19 @@ User=pi
 # Very important: XDG_RUNTIME_DIR required when generating sound from a systemd/crontab/rc.local background service
 # Other values are defaults for nfc reader, with KIOSK_BRIGADE defaulting to the host name.
 #     See https://www.freedesktop.org/software/systemd/man/systemd.unit.html
-Environment="XDG_RUNTIME_DIR=/run/user/1000"
-# Following is used with multiple screens (no-one using at present)
-# Need to be in place or launch_kiosk2 will fail
-Environment=DISPLAY=:0.0
-Environment=XAUTHORITY=/home/pi/.Xauthority
+#Environment="XDG_RUNTIME_DIR=/run/user/1000"
+## Following is used with multiple screens (no-one using at present)
+## Need to be in place or launch_kiosk2 will fail
+#Environment=DISPLAY=:0.0
+#Environment=XAUTHORITY=/home/pi/.Xauthority
+#
+## Version: x.p
 
-# Version: x.p
+# Universal Environment Configuration (Bookworm & Trixie)
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+Environment="DISPLAY=:0"
+Environment="WAYLAND_DISPLAY=wayland-0"
+Environment="XAUTHORITY=/home/pi/.Xauthority"
 
 # Set required env variables.
 EnvironmentFile=/etc/profile.d/rfstag/base.env
@@ -31,7 +37,7 @@ EnvironmentFile=-/home/pi/.config/rfstag/local.env
 ExecStart=/usr/bin/launch_kiosk2
 
 # Restart if failure. Can be caused by network or reader failing.
-RestartSec=30
+RestartSec=10s
 Restart=on-failure
 
 [Install]

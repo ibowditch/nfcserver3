@@ -5,19 +5,20 @@ set -e
 set -v
 set -x
 
-# Turn off screen blanking: see https://pimylifeup.com/raspberry-pi-kiosk/
-#xset s noblank
-#xset s off
-#xset -dpms
+# Turn off screen blanking for X11 environments (Bookworm)
+if [ -z "$WAYLAND_DISPLAY" ] && command -v xset >/dev/null 2>&1; then
+  xset s noblank || true
+  xset s off || true
+  xset -dpms || true
+fi
 
-#INIFILE=${NFC_INI_FILE}
 INIFILE=${NFC_INI_FILE:-/home/pi/.config/rfstag/nfcreader.ini}
 
 # Always use the DEFAULT section in the INI file to obtain necessary details
 INISECTION='DEFAULT'
 CRUDINI=/usr/bin/crudini
 
-# Other env vars mut be set, normally in base.env, but can be overriden in local.env
+# Other env vars must be set, normally in base.env, but can be overriden in local.env
 BRIG=${KIOSK_BRIGADE:-$(hostname)}
 SERV=${BUSHFIRE_SERVER}
 KLOC=${KIOSK_LOCATION}
@@ -31,11 +32,14 @@ KIOSK_URL="${SCH}://${BRIG}.${SERV}/${KURI}/${KLOC}"
 
 echo "KIOSK_URL" $KIOSK_URL > ~/klurl
 
+# Clear singleton locks to prevent profile startup errors
+rm -rf $KPROFILE/Singleton*
+rm -rf $KPROFILE/Default/Singleton*
+
 # Clear cache before starting to force reload - especially after new releases
 [ -d $KPROFILE/Default/Cache ] && rm -rf $KPROFILE/Default/Cache/*
 
-# To prevent warning about not closing down properly
-# See https://raspberrypi.stackexchange.com/questions/68734/how-do-i-disable-restore-pages-chromium-didnt-shut-down-correctly-prompt
+# Prevent warning about not closing down properly
 if [ -w $KPROFILE/Default/Preferences ]; then
   # Remove traces of improper shutdown
   sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' $KPROFILE/Default/Preferences
@@ -44,12 +48,29 @@ if [ -w $KPROFILE/Default/Preferences ]; then
   chmod a-w $KPROFILE/Default/Preferences
 fi
 
-# This must have settings set prior to force keyboard to front or it will be obscured by chromium.
-# -v flag described https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
+# On-screen keyboard support
 [[ -v SCREEN_KEYBOARD ]] && nohup $SCREEN_KEYBOARD  &> /dev/null &
 
-# New flags cause vsync errors to be logged to journal. Remove until 2nd ACTIV screen needed, and further investigation.
-# chromium-browser --user-data-dir=$KIOSK_CHROME_PROFILE --window-position=0,0 --noerrors --noerrordialogs  --disable-infobars --start-fullscreen --new-window --check-for-update-interval=31536000 --app=$KIOSK_URL
-chromium-browser --noerrors --noerrordialogs  --disable-infobars --start-fullscreen --new-window --check-for-update-interval=31536000 --app=$KIOSK_URL
+# Assemble universal Chromium flags
+CHROMIUM_FLAGS=(
+  "--kiosk"
+  "--start-fullscreen"
+  "--noerrdialogs"
+  "--disable-infobars"
+  "--no-first-run"
+  "--disable-session-crashed-bubble"
+  "--disable-gcm"
+  "--check-for-update-interval=31536000"
+)
 
-exit 0
+# Select Ozone rendering platform based on active display server
+if [ -n "$WAYLAND_DISPLAY" ]; then
+  # Native Wayland flags for Trixie (Labwc/Wayfire)
+  CHROMIUM_FLAGS+=("--enable-features=UseOzonePlatform" "--ozone-platform=wayland")
+else
+  # X11 fallback flags for Bookworm (LXDE/X11)
+  CHROMIUM_FLAGS+=("--ozone-platform=x11")
+fi
+
+# Launch Chromium replacing the shell process
+exec chromium-browser "${CHROMIUM_FLAGS[@]}" --app="$KIOSK_URL"
